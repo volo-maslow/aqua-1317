@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2021",
+    "lib": ["es2021"],
+    "baseUrl": "./",
+    "sourceMap": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noEmit": true,
+    "paths": {
+      "@tools": ["src/tools"],
+      "@tools/*": ["src/tools/*"],
+      "@repositories": ["src/repositories"],
+      "@repositories/*": ["src/repositories/*"],
+      "@domain": ["src/domain"],
+      "@domain/*": ["src/domain/*"],
+      "@entities": ["src/entities"],
+      "@entities/*": ["src/entities/*"],
+      "@interfaces": ["src/interfaces"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@enums": ["src/enums"],
+      "@enums/*": ["src/enums/*"]
+    }
+  },
+  "ts-node": { "files": true },
+  "exclude": ["node_modules"]
+}
